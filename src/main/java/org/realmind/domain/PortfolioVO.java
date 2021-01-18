@@ -1,4 +1,4 @@
-package org.zerock.domain;
+package org.realmind.domain;
 
 import java.util.Date;
 

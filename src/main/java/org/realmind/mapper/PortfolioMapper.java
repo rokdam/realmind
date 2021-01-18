@@ -1,11 +1,11 @@
-package org.zerock.mapper;
+package org.realmind.mapper;
 
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
-import org.zerock.domain.PortfolioVO;
+import org.realmind.domain.PortfolioVO;
 
 public interface PortfolioMapper {
     

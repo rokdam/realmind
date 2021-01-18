@@ -3,9 +3,9 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
     
-<mapper namespace="org.zerock.mapper.PortfolioMapper">
+<mapper namespace="org.realmind.mapper.PortfolioMapper">
 
-    <select id="login" resultType="org.zerock.domain.PortfolioVO">
+    <select id="login" resultType="org.realmind.domain.PortfolioVO">
         select * from portfolio_contents where user_id=#{user_id}
     </select>
     

@@ -1,9 +1,9 @@
-package org.zerock;
+package org.realmind;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.zerock.domain.PortfolioVO;
-import org.zerock.mapper.PortfolioMapper;
+import org.realmind.domain.PortfolioVO;
+import org.realmind.mapper.PortfolioMapper;
 
 class PortfolioMapperTest extends RealmindApplicationTests {
     
