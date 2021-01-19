@@ -1,4 +1,4 @@
-package org.realmind.domain;
+package org.realmind.model;
 
 import java.util.Date;
 

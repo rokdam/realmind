@@ -2,8 +2,8 @@ package org.realmind;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.realmind.domain.PortfolioVO;
 import org.realmind.mapper.PortfolioMapper;
+import org.realmind.model.PortfolioVO;
 
 class PortfolioMapperTest extends RealmindApplicationTests {
     

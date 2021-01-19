@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="org.realmind.mapper.ManagerMapper">
+
+    <!-- 회원가입 -->
+    <insert id="createManager">
+        insert into manager(login_id, mail, pw, manager_name, auth) values(#{login_id}, #{mail}, #{pw}, #{manager_name}, #{auth})
+    </insert>
+    
+    <!-- 회원목록 -->
+    <select id="gerManagerList" resultType="map">
+        select * from manager;
+    </select>
+    
+    <!-- 회원정보조회 -->
+    <select id="searchManager" resultType="org.realmind.model.ManagerVO">
+        select * from manager where id = ${id}
+    </select>
+    
+    <!-- 회원정보갱신 -->
+    <update id="updateManager">
+        update manager set mail = ${mail}, pw=${pw}, manager_name=${manager_name}, auth=${auth}
+    </update>
+    
+    <!-- 회원정보삭제 -->
+    <select id="deleteManager">
+        delete from manager where id = ${id};
+    </select>
+</mapper>

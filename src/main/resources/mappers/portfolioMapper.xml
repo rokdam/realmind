@@ -5,7 +5,7 @@
     
 <mapper namespace="org.realmind.mapper.PortfolioMapper">
 
-    <select id="login" resultType="org.realmind.domain.PortfolioVO">
+    <select id="login" resultType="org.realmind.model.PortfolioVO">
         select * from portfolio_contents where user_id=#{user_id}
     </select>
     
