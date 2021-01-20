@@ -17,16 +17,16 @@
     
     <!-- 회원정보조회 -->
     <select id="searchManager" resultType="org.realmind.model.ManagerVO">
-        select * from manager where id = ${id}
+        select * from manager where id = #{id}
     </select>
     
     <!-- 회원정보갱신 -->
     <update id="updateManager">
-        update manager set mail = ${mail}, pw=${pw}, manager_name=${manager_name}, auth=${auth}
+        update manager set mail = #{mail}, pw=#{pw}, manager_name=#{manager_name}, auth=#{auth}
     </update>
     
     <!-- 회원정보삭제 -->
     <select id="deleteManager">
-        delete from manager where id = ${id};
+        delete from manager where id = #{id};
     </select>
 </mapper>
