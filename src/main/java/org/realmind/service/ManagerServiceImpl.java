@@ -6,7 +6,9 @@ import javax.annotation.Resource;
 
 import org.realmind.mapper.ManagerMapper;
 import org.realmind.model.ManagerVO;
+import org.springframework.stereotype.Service;
 
+@Service("managerService")
 public class ManagerServiceImpl implements ManagerService {
 
     @Resource(name="managerMapper")

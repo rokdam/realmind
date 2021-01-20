@@ -11,7 +11,8 @@ public class ManagerVO {
     private int auth;
     private Date created_date;
     private Date updated_date;
-    private Date deleted_flg;
+    private boolean delete_flg;
+    
     public int getId() {
         return id;
     }
@@ -60,17 +61,17 @@ public class ManagerVO {
     public void setUpdated_date(Date updated_date) {
         this.updated_date = updated_date;
     }
-    public Date getDeleted_flg() {
-        return deleted_flg;
+    public boolean getDeleted_flg() {
+        return delete_flg;
     }
-    public void setDeleted_flg(Date deleted_flg) {
-        this.deleted_flg = deleted_flg;
+    public void setDeleted_flg(boolean delete_flg) {
+        this.delete_flg = delete_flg;
     }
     @Override
     public String toString() {
         return "ManagerVO [id=" + id + ", login_id=" + login_id + ", mail=" + mail + ", pw=" + pw + ", manager_name="
                 + manager_name + ", auth=" + auth + ", created_date=" + created_date + ", updated_date=" + updated_date
-                + ", deleted_flg=" + deleted_flg + "]";
+                + ", deleted_flg=" + delete_flg + "]";
     }
     
 }
